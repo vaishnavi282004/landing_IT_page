@@ -587,6 +587,59 @@ const courseDetails = {
         duration: '6 Months',
         description: 'Industrial robotics and automation systems.',
         topics: ['PLC Programming', 'Industrial Robots', 'Automation Systems', 'SCADA', 'Safety Standards']
+    },
+    
+    // Digital Marketing Courses
+    'dm-basic': {
+        title: 'BASIC DIGITAL MARKETING COURSE',
+        duration: '2.5 Months',
+        description: 'Foundation course covering all essential digital marketing skills with AI tools and practical projects.',
+        topics: [
+            '1. Introduction to Digital Marketing',
+            '2. Website Designing (No Code)',
+            '3. SEO – Search Engine Optimization (Basic)',
+            '4. Social Media Marketing (Basic)',
+            '5. Canva Designing + Content Writing',
+            '6. Google My Business Optimization',
+            '7. WhatsApp Marketing',
+            '8. Email Marketing (Beginner)',
+            '9. Introduction to Google Ads',
+            '10. Freelancing + Resume Building',
+            '🧠 BONUS MODULES:',
+            '• AI Tools: ChatGPT, Canva AI',
+            '• Mobile Video Editing: CapCut',
+            '• Vibe Marketing Basics',
+            '• Mini projects & mock interviews'
+        ]
+    },
+    'dm-advanced': {
+        title: 'ADVANCED DIGITAL MARKETING COURSE',
+        duration: '6 Months',
+        description: 'Comprehensive advanced digital marketing course including all basic modules plus advanced strategies, AI mastery, and live projects.',
+        topics: [
+            '📚 ALL BASIC MODULES (1–10) INCLUDED',
+            '11. Google Ads – Advanced',
+            '12. Meta Ads (Facebook & Instagram)',
+            '13. SEO – Advanced',
+            '14. AI in Digital Marketing',
+            '15. Funnel Building & Landing Pages',
+            '16. WhatsApp Funnel Mastery',
+            '17. Instagram Reels & Viral Strategy (2025 Edition)',
+            '18. LinkedIn Marketing & Lead Generation',
+            '19. YouTube Marketing + Shorts',
+            '20. Affiliate & Influencer Marketing',
+            '21. Vibe Marketing & Emotional Branding',
+            '22. Analytics & Reporting',
+            '23. Freelancing, Personal Branding & Live Projects',
+            '🧠 BONUS MODULES:',
+            '• AI Power Tools Mastery',
+            '• Personal Branding Accelerator',
+            '• Viral Reels Creation Masterclass',
+            '• Lead Magnet Creation',
+            '• Client Pitching and Proposal Templates',
+            '• Local Business Marketing Blueprint',
+            '• E-commerce Growth Mastery'
+        ]
     }
 };
 
