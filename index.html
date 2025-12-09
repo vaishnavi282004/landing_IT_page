@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROFESSIONALS - IT & AI Training Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Logo and Title at Top -->
+            <div class="hero-header">
+                <div class="title-with-logo">
+                    <img src="B.png" alt="Logo" class="logo-image">
+                    <div class="hero-title-box">
+                        <h1 class="hero-title">THE PROFESSIONALS</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <!-- AI Image Left -->
+                <div class="hero-image left">
+                    <img src="A.png" alt="Artificial Intelligence">
+                    <div class="image-label">AI - Artificial Intelligence</div>
+                </div>
+
+                <!-- Main Content Center -->
+                <div class="hero-main">
+                    <p class="hero-slogan">
+                        "Empowering Tomorrow's IT Innovators Today!"
+                    </p>
+                    
+                    <!-- Email in Center -->
+                    <div class="hero-email">
+                        <i class="fas fa-envelope"></i>
+                        <span>professionals.tmtg@gmail.com</span>
+                    </div>
+                    
+                    <!-- Navigation Buttons -->
+                    <div class="hero-nav-buttons">
+                        <a href="#enquiry" class="hero-nav-btn">
+                            <i class="fas fa-edit"></i> Enquiry
+                        </a>
+                        <a href="#courses" class="hero-nav-btn">
+                            <i class="fas fa-book"></i> Courses
+                        </a>
+                        <a href="#affiliations" class="hero-nav-btn">
+                            <i class="fas fa-handshake"></i> Affiliations
+                        </a>
+                        <a href="#about" class="hero-nav-btn">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                        <a href="#contact" class="hero-nav-btn">
+                            <i class="fas fa-phone"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IT Image Right -->
+                <div class="hero-image right">
+                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=500&fit=crop" alt="IT Technology">
+                    <div class="image-label">IT - Information Technology</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section class="enquiry-section" id="enquiry">
+        <div class="container">
+            <h2 class="section-title">Enquiry Form</h2>
+            <div class="enquiry-layout">
+                <!-- Left Side: Courses Slider -->
+                <div class="courses-slider-section" id="courses">
+                    <h3 class="slider-title">Our Courses</h3>
+                    <div class="courses-slider">
+                        <div class="course-slide">
+                            <div class="course-name">Government Courses</div>
+                            <div class="course-name">Private Courses</div>
+                            <div class="course-name">University Programs</div>
+                            <div class="course-name">Robotics Courses</div>
+                            <div class="course-name">Digital Marketing</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Us Below Courses -->
+                    <div class="contact-us-box" id="contact">
+                        <h3>Contact Us</h3>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <i class="fas fa-envelope"></i>
+                                 <span>professionals.tmtg@gmail.com</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <p>+91 9528031917</p>
+                                    <p>+91 8958555559</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Visit us for more information</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center: Enquiry Form -->
+                <div class="form-container">
+                    <form id="enquiryForm" class="enquiry-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qualification">Higher Qualification *</label>
+                            <select id="qualification" name="qualification" required>
+                                <option value="">Select Qualification</option>
+                                <option value="10th">10th Pass</option>
+                                <option value="12th">12th Pass</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="postgraduate">Post Graduate</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="courseType">Course Category *</label>
+                            <select id="courseType" name="courseType" required onchange="if(this.value === 'university') { window.open('https://landing-page-sonojas.vercel.app/', '_blank'); this.value = ''; }">
+                                <option value="">Select Course Type</option>
+                                <option value="government">Government Courses</option>
+                                <option value="private">Private Courses</option>
+                                <option value="university">University Programs</option>
+                                <option value="robotics">Robotics Courses</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="governmentCourseGroup" style="display: none;">
+                            <label for="governmentInstitute">Select Institute *</label>
+                            <select id="governmentInstitute" name="governmentInstitute">
+                                <option value="">Select Institute</option>
+                                <option value="nait">NILET (National Institute of Electronics & Information Technology)</option>
+                                <option value="upsdco">UPDESCO (UP Development Systems Corporation)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="naitCourseGroup" style="display: none;">
+                            <label for="naitCourse">NIELIT Course *</label>
+                            <select id="naitCourse" name="naitCourse">
+                                <option value="">Select NIELIT Course</option>
+                                <option value="bcc">BCC - Basic Computer Course</option>
+                                <option value="ccc">CCC - Course on Computer Concepts</option>
+                                <option value="ccc-plus">CCC Plus - Course on Computer Concepts Plus</option>
+                                <option value="o-level">O Level</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="upsdcoCourseGroup" style="display: none;">
+                            <label for="upsdcoCourse">UPDESCO Course *</label>
+                            <select id="upsdcoCourse" name="upsdcoCourse">
+                                <option value="">Select UPDESCO Course</option>
+                                <option value="upsdco1">Course on Computer Concept (CCC)</option>
+                                <option value="upsdco2">Diploma In Information Technology</option>
+                                <option value="upsdco3">Certificate in Computer Application (CCA)</option>
+                                <option value="upsdco4">Certificate in Computer Programming (CCP)</option>
+                                <option value="upsdco5">Certificate in Information System (CIS)</option>
+                                <option value="upsdco6">Certificate in Information Technology (CIT)</option>
+                                <option value="upsdco7">Java Programming</option>
+                                <option value="upsdco8">Oracle 8i Developer 2000 VB</option>
+                                <option value="upsdco9">Web Application Development</option>
+                                <option value="upsdco10">VB with Access Microsoft</option>
+                                <option value="upsdco11">OOPS and C++</option>
+                                <option value="upsdco12">Application Development using C++</option>
+                                <option value="upsdco13">VB with SQL Server application Development</option>
+                                <option value="upsdco14">Linux Unix</option>
+                                <option value="upsdco15">Network Technology</option>
+                                <option value="upsdco16">Desk Top Publishing (DTP)</option>
+                                <option value="upsdco17">Computer Aided Designing (Auto CAD)</option>
+                                <option value="upsdco18">Certificate in office Automation</option>
+                                <option value="upsdco19">Certificate in financial accounting (Tally)</option>
+                                <option value="upsdco20">Certificate in Web Design</option>
+                                <option value="upsdco21">DB Application development using ACCESS 2000</option>
+                                <option value="upsdco22">Certificate in using Computer</option>
+                                <option value="upsdco23">Certificate in C Programming</option>
+                                <option value="upsdco24">Certificate In C++ Programming</option>
+                                <option value="upsdco25">Certificate in using Web</option>
+                                <option value="upsdco26">Summer Training Project for BTech/BCA</option>
+                                <option value="upsdco27">Summer Training Project for MTech/MCA</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="privateCourseGroup" style="display: none;">
+                            <label for="privateCourse">Private Course Level *</label>
+                            <select id="privateCourse" name="privateCourse">
+                                <option value="">Select Course Level</option>
+                                <option value="level1">Level 1 - Foundation of Basic </option>
+                                <option value="level2">Level 2 - AI Literacy</option>
+                                <option value="level3">Level 3 - Market-Ready</option>
+                                <option value="level4">Level 4 - Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="universityCourseGroup" style="display: none;">
+                            <label for="universityCourse">University Program *</label>
+                            <select id="universityCourse" name="universityCourse" onchange="if(this.value) window.open('https://landing-page-sonojas.vercel.app/', '_blank')">
+                                
+                                
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="roboticsCourseGroup" style="display: none;">
+                            <label for="roboticsCourse">Robotics Course *</label>
+                            <select id="roboticsCourse" name="roboticsCourse">
+                                <option value="">Select Robotics Course</option>
+                                <option value="robot1">Introduction to Robotics</option>
+                                <option value="robot2">Arduino Programming & Projects</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="digitalMarketingCourseGroup" style="display: none;">
+                            <label for="digitalMarketingCourse">Digital Marketing Course *</label>
+                            <select id="digitalMarketingCourse" name="digitalMarketingCourse">
+                                <option value="">Select Digital Marketing Course</option>
+                                <option value="dm1">SEO (Search Engine Optimization)</option>
+                                <option value="dm2">Social Media Marketing</option>
+                                <option value="dm3">Google Ads & PPC</option>
+                                <option value="dm4">Content Marketing</option>
+                                <option value="dm5">Email Marketing</option>
+                                <option value="dm6">Complete Digital Marketing Course</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Enquiry</button>
+                    </form>
+
+                    <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Thank You!</h3>
+                        <p>Our team will connect with you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: Quick Links -->
+                <div class="blank-box">
+                    <div class="quick-links-content">
+                        <h3 class="quick-links-title">Quick Links</h3>
+                        
+                        <div class="quick-link-card" onclick="window.open('https://landing-page-sonojas.vercel.app/', '_blank')">
+                            <div class="link-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="link-info">
+                                <h4>University Programs</h4>
+                                <p>Explore degree programs in collaboration with top universities</p>
+                            </div>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </div>
+
+                        <div class="quick-link-card" onclick="window.open('https://vaishnavi282004.github.io/Landing_page_Tally/', '_blank')">
+                            <div class="link-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="link-info">
+                                <h4>Tally Course</h4>
+                                <p>Master accounting software with our comprehensive Tally training</p>
+                            </div>
+                            <i class="fas fa-arrow-right link-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliations Section -->
+    <section class="affiliations-section" id="affiliations">
+        <div class="container">
+            <h2 class="section-title">Our Affiliations</h2>
+            <div class="affiliations-grid">
+                <div class="affiliation-card">
+                    <i class="fas fa-university"></i>
+                    <h3>NIELIT</h3>
+                    <p>National Institute of Electronics & Information Technology</p>
+                </div>
+                <div class="affiliation-card">
+                    <i class="fas fa-building"></i>
+                    <h3>UPDESCO</h3>
+                    <p>UP Development Systems Corporation</p>
+                </div>
+                <div class="affiliation-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Tally</h3>
+                    <p>Authorized Tally Training Partner</p>
+                </div>
+                <div class="affiliation-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Placement with Sonojas</h3>
+                    <p>100% Job Assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p class="about-intro">
+                    <strong>THE PROFESSIONALS</strong> is a leading IT & AI training institute 
+                    committed to bridging the gap between academic learning and industry requirements. 
+                    We offer comprehensive courses designed to make our students industry-ready.
+                </p>
+
+                <div class="courses-offered">
+                    <h3>Courses We Offer:</h3>
+                    
+                    <!-- Government Courses - NILET -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-university"></i> NIELIT Courses (National Institute of Electronics & Information Technology)</h4>
+                            <button class="view-courses-btn" onclick="toggleCourses('nait')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div id="nait-courses" class="course-list" style="display: none;">
+                            <div class="course-item">
+                                <span>BCC - Basic Computer Course</span>
+                                <button class="view-details-btn" onclick="showDetails('nait-bcc')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>CCC - Course on Computer Concepts</span>
+                                <button class="view-details-btn" onclick="showDetails('nait-ccc')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>CCC Plus - Course on Computer Concepts Plus</span>
+                                <button class="view-details-btn" onclick="showDetails('nait-ccc-plus')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>O Level</span>
+                                <button class="view-details-btn" onclick="showDetails('nait-o-level')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Government Courses - UPDESCO -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-building"></i> UPDESCO Courses (UP Development Systems Corporation)</h4>
+                            <button class="view-courses-btn" onclick="toggleCourses('upsdco')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div id="upsdco-courses" class="course-list" style="display: none;">
+                            <div class="course-item">
+                                <span>Course on Computer Concept (CCC)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-ccc')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Diploma In Information Technology</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-dit')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in Computer Application (CCA)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-cca')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in Computer Programming (CCP)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-ccp')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in Information System (CIS)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-cis')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in Information Technology (CIT)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-cit')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Java Programming</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-java')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Oracle 8i Developer 2000 VB</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-oracle')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Web Application Development</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-webdev')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>VB with Access Microsoft</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-vbaccess')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>OOPS and C++</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-oops')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Application Development using C++</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-cplusdev')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>VB with SQL Server application Development</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-vbsql')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Linux Unix</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-linux')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Network Technology</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-network')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Desk Top Publishing (DTP)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-dtp')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Computer Aided Designing (Auto CAD)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-autocad')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in office Automation</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-office')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in financial accounting (Tally)</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-tally')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in Web Design</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-webdesign')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>DB Application development using ACCESS 2000</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-access')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in using Computer</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-computer')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in C Programming</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-c')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate In C++ Programming</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-cplus')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Certificate in using Web</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-web')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Summer Training Project for BTech/BCA</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-btech')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Summer Training Project for MTech/MCA</span>
+                                <button class="view-details-btn" onclick="showDetails('upsdco-mtech')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Private Courses -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-graduation-cap"></i> Private Courses (Level 1-4)</h4>
+                            <button class="view-courses-btn" onclick="toggleCourses('private')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div id="private-courses" class="course-list" style="display: none;">
+                            <div class="course-item">
+                                <span>Level 1: Digital Literacy & Computer Basics</span>
+                                <button class="view-details-btn" onclick="showDetails('private-level1')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Level 2: Generative AI Fundamentals</span>
+                                <button class="view-details-btn" onclick="showDetails('private-level2')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Level 3: Data Analytics & Python</span>
+                                <button class="view-details-btn" onclick="showDetails('private-level3')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Level 4: Advanced AI & Cloud Computing</span>
+                                <button class="view-details-btn" onclick="showDetails('private-level4')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University Programs -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-university"></i> University Programs</h4>
+                            <button class="view-courses-btn" onclick="window.open('https://landing-page-sonojas.vercel.app/', '_blank')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-bullhorn"></i> Digital Marketing</h4>
+                            <button class="view-courses-btn" onclick="toggleCourses('digital-marketing')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div id="digital-marketing-courses" class="course-list" style="display: none;">
+                            <div class="course-item">
+                                <span>SEO (Search Engine Optimization)</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-seo')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Social Media Marketing</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-smm')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Google Ads & PPC</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-ppc')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Content Marketing</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-content')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Email Marketing</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-email')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Complete Digital Marketing Course</span>
+                                <button class="view-details-btn" onclick="showDetails('dm-complete')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Robotics Courses -->
+                    <div class="course-category">
+                        <div class="category-header">
+                            <h4><i class="fas fa-robot"></i> Robotics Courses</h4>
+                            <button class="view-courses-btn" onclick="toggleCourses('robotics')">View Courses <i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div id="robotics-courses" class="course-list" style="display: none;">
+                            <div class="course-item">
+                                <span>Introduction to Robotics</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-intro')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Arduino Programming & Projects</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-arduino')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Raspberry Pi & IoT</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-pi')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Advanced Robotics & AI Integration</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-advanced')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Drone Technology & Programming</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-drone')">View Details</button>
+                            </div>
+                            <div class="course-item">
+                                <span>Industrial Automation & Robotics</span>
+                                <button class="view-details-btn" onclick="showDetails('robot-industrial')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="placement-info">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h3>100% Placement Assistance</h3>
+                        <p>We have a strategic placement tie-up with <strong>Sonojas</strong>, 
+                        ensuring our trained students get the best job opportunities in leading 
+                        IT and AI companies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow Up Section -->
+    <section class="followup-section">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <div class="social-links">
+                <a href="https://whatsapp.com/channel/0029VbAdjWII1rcmfHerre1d" class="social-card whatsapp-channel" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp Channel</h3>
+                    <p>Join our updates channel</p>
+                </a>
+
+                <a href="https://www.instagram.com/theprofessionals_tallyghar?igsh=NXdzeTV5dTE1NGJu" class="social-card instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Follow us for daily updates</p>
+                </a>
+
+                <a href="https://www.facebook.com/theprofessionals_tallyghar" class="social-card facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Like our page for news</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 THE PROFESSIONALS. All Rights Reserved.</p>
+            <p>Empowering Careers Through IT & AI Education</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+919528031917" class="call-float" target="_blank" title="Call us">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919528031917" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
